@@ -80,3 +80,6 @@ body {
 .burn-effect {
   filter: contrast(200%) brightness(80%) sepia(20%);
 }
+.font-pirataOne {
+  font-family: var(--font-pirataOne);
+}

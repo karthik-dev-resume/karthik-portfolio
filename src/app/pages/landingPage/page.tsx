@@ -16,7 +16,7 @@ import {
 export default function LandingPage() {
   const socialLinks = [
     {
-      href: "https://github.com/karthikdshetty",
+      href: "https://github.com/karthik-dev-resume",
       icon: Github,
       label: "Github",
     },
@@ -27,21 +27,12 @@ export default function LandingPage() {
       label: "LinkedIn",
     },
     {
-      href: "mailto:karthik.shetty.dev@gmail.com",
+      href: "mailto:karthik.shetty.resume@gmail.com",
       icon: Mail,
       label: "Email",
     },
-    {
-      href: "https://www.instagram.com/k3rthik/",
-      icon: Instagram,
-      label: "Instagram",
-    },
+
     { href: "tel:+7026800874", icon: Phone, label: "Phone" },
-    {
-      href: "https://m.facebook.com/profile.php?id=100022119961398&name=xhp_nt__fb__action__open_user",
-      icon: Facebook,
-      label: "FaceBook",
-    },
   ];
   return (
     <BlurFade className="gap-12 flex flex-col sm:flex-row items-center justify-center px-10 sm:px-24 ">
@@ -57,7 +48,7 @@ export default function LandingPage() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex justify-start items-start flex-row w-full flex-wrap  gap-2">
           {socialLinks.map(({ href, icon: Icon, label }) => (
             <a
               key={href}

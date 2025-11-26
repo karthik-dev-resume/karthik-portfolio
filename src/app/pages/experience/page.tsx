@@ -40,7 +40,7 @@ export default function Experience() {
             {" "}
             <VelocityScroll
               text="ReactJs • JavaScript • Redux • Next.js • Node.js • HTML • CSS"
-              default_velocity={5}
+              default_velocity={2}
               className=" font-display text-center text-sm font-bold tracking-[-0.02em] text-zinc-600  drop-shadow-sm dark:text-zinc-400 md:text-2xl md:leading-[2.5rem]"
             />
           </div>
@@ -74,7 +74,7 @@ export default function Experience() {
             {" "}
             <VelocityScroll
               text="Object-Oriented Programming • Operating Systems • DBMS • Computer Networks • Web Development • Software Engineering • Problem-Solving Skills"
-              default_velocity={5}
+              default_velocity={2}
               className=" font-display text-center text-sm font-bold tracking-[-0.02em] text-zinc-600  drop-shadow-sm dark:text-zinc-400 md:text-2xl md:leading-[2.5rem]"
             />
           </div>

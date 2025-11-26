@@ -39,29 +39,29 @@ export default function About() {
             Hi, I&apos;m Karthik D Shetty
           </div>
           <div className="text-sm sm:text-base text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
-            I&apos;m a results-driven Software Engineer with ten months of
+            I&apos;m a results-driven Software Engineer with over two years of
             frontend development experience, actively seeking full-time
-            opportunities in Full Stack Development. With a background in
-            Computer Science and Engineering, I specialize in React.js,
-            JavaScript, HTML, CSS, and TypeScript, alongside backend
-            technologies like Node.js, Express.js, and MongoDB. <br />
+            opportunities in Frontend Engineering. With a strong foundation in
+            Computer Science and Engineering, I specialize in building
+            responsive, high-performance web interfaces using React.js, Next.js,
+            JavaScript, TypeScript, HTML, and CSS.
+            <br />
             <br />
             In my current role at Ordrio Technologies Private Limited, I
-            collaborate with a cross-functional team to develop and maintain web
-            applications. I handle the full software development lifecycle &
-            focus on creating responsive, user-friendly UI components. My key
-            projects include Ordrio Saas Panel, Cree8 Construction, and Aura.
+            collaborate with cross-functional teams to design, develop, and
+            optimize modern web applications. I focus on creating user-friendly
+            UI components, improving performance, and ensuring seamless user
+            experiences across devices. My key projects include Ordrio SaaS
+            Panel, Cree8 Construction, Aura, Archicraft, Tastry, and Grocbay.
             <br />
             <br />
-            Beyond my technical skills, I have strong leadership experience,
-            having led a team to a national-level paper presentation award.
-            Fluent in English, Hindi, Kannada, and Tulu, I am known for my
-            punctuality, honesty, and efficiency. I’m excited to bring my skills
-            to a dynamic full stack development role.e backend technologies like
-            Node.js, Express.js, and MongoDB. With a strong foundation in
-            frontend development and a growing proficiency in full stack
-            technologies, I bring a hands-on approach to solving complex
-            problems and delivering high-quality web solutions.
+            Beyond my technical expertise, I bring strong leadership and
+            communication skills. I have led a team to a national-level paper
+            presentation award and am known for my punctuality, honesty, and
+            efficiency. Fluent in English, Hindi, Kannada, and Tulu, I&apos;m
+            excited to contribute my skills to a dynamic frontend development
+            role where I can continue building impactful, high-quality web
+            applications.
           </div>
         </div>
         <div className="flex items-center justify-center flex-col mt-10">

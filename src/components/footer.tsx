@@ -11,7 +11,7 @@ export default function Footer() {
           Powered By: <FaReact /> <RiNextjsFill />
         </div>
         <div className="text-xs dark:text-zinc-400 text-zinc-600 text-center sm:text-left">
-          Copyright © Karthik 2024 All rights Reserved
+          Copyright © Karthik 2025 All rights Reserved
         </div>
       </div>
     </div>

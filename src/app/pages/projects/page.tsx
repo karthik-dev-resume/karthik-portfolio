@@ -19,7 +19,28 @@ const projects = [
     description:
       "Grocbay is your go-to online grocery store, offering fresh produce and essential household items with convenient home delivery. Experience easy navigation and quick service, making your daily shopping a breeze.",
     logo: Grocbay,
-    link: "https://grocery.ordrio.com/",
+    link: "https://grocbay.ordrio.com",
+  },
+  {
+    name: "Nadi Ecommerce Dashboard",
+    description:
+      "Nadi Ecommerce Dashboard is a comprehensive dashboard for managing the ecommerce store. It allows you to manage the products, orders, customers, and inventory.",
+    logo: Grocbay,
+    link: "https://nadi.ordrio.com/",
+  },
+  {
+    name: "Archicraft",
+    description:
+      "Archicraft is a company that provides design and construction services for residential and commercial projects.",
+    logo: Grocbay,
+    link: "https://www.archicraftdesignstudio.in/",
+  },
+  {
+    name: "Twisted Tiffin",
+    description:
+      "Twisted Tiffin is a food delivery service that provides a wide range of Indian cuisine to your doorstep.",
+    logo: Grocbay,
+    link: "https://twistedtiffin.com/",
   },
   {
     name: "Cree8",

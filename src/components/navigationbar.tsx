@@ -31,7 +31,9 @@ export default function NavigationBar() {
       <div>
         {" "}
         <Link href="/">
-          <Gitlab fontSize="78px" />
+          <div className="text-4xl font-bold tracking-wider font-pirataOne ">
+            K3RTHIK
+          </div>
         </Link>
       </div>
       <div className="hidden sm:flex flex-row justify-between gap-10 items-center">

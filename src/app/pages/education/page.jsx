@@ -75,7 +75,7 @@ export default function Education() {
                 </CardContent>
                 <div className="flex justify-between mt-2 text-sm">
                   <CardFooter>
-                    <strong>2019 - 2024</strong>
+                    <strong>2019 - 2023</strong>
                   </CardFooter>
                   <CardFooter>
                     <strong>9.53 cgpa</strong>
