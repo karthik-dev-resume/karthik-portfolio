@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Inter, Pirata_One } from "next/font/google";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
-import { cn } from "../lib/utils";
-import NavigationBar from "../components/navigationbar";
+import { cn } from "@/lib/utils";
+import NavigationBar from "@/components/navigationbar";
 import { Toaster } from "react-hot-toast";
+import { defaultMetadata, generateStructuredData } from "@/lib/seo/metadata";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -17,47 +18,25 @@ const pirataOne = Pirata_One({
   variable: "--font-pirataOne",
 });
 
-export const metadata: Metadata = {
-  title: "Karthik Portfolio",
-  description: "",
-  icons: {
-    icon: [
-      { url: "/favicon/favicon.ico", sizes: "any" },
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      {
-        url: "/favicon/android-chrome-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        url: "/favicon/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-    apple: [
-      {
-        url: "/favicon/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
-  },
-  manifest: "/favicon/site.webmanifest",
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = generateStructuredData();
+
   return (
     <html lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Righteous&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
       <body

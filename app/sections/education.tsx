@@ -1,6 +1,7 @@
 "use client";
 
-import BlurFade from "../../../components/magicui/blur-fade";
+import { motion } from "framer-motion";
+import BlurFade from "@/components/magicui/blur-fade";
 import {
   Card,
   CardContent,
@@ -8,20 +9,26 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../../../components/ui/card";
+} from "@/components/ui/card";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../../../components/ui/tabs";
+} from "@/components/ui/tabs";
 
 export default function Education() {
   return (
-    <>
-      <div className="w-full text-4xl sm:text-5xl font-extrabold text-left px-10 sm:px-24 font-righteous">
+    <section id="education" className="scroll-mt-20">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full text-4xl sm:text-5xl font-extrabold text-left px-10 sm:px-24 font-righteous"
+      >
         Education
-      </div>
+      </motion.div>
       <BlurFade className="flex flex-col gap-10 sm:flex-row items-start justify-start px-10 sm:px-24 mt-10 overflow-hidden">
         <div className="w-full flex flex-col sm:flex-col gap-10  justify-start items-start">
           <Tabs defaultValue="primary" className=" w-full ">
@@ -175,6 +182,6 @@ export default function Education() {
           </Tabs>
         </div>
       </BlurFade>
-    </>
+    </section>
   );
 }

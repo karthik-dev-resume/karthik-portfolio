@@ -1,6 +1,6 @@
 "use client"
 
-import { ReactNode } from "react"
+import { ReactNode, useEffect, useRef, useState } from "react"
 import { cn } from "../../lib/utils"
 
 interface VelocityScrollProps {
@@ -13,13 +13,50 @@ interface VelocityScrollProps {
 export function VelocityScroll({ 
   children, 
   text, 
-  default_velocity = 1,
+  default_velocity = 2,
   className 
 }: VelocityScrollProps) {
+  const [isVisible, setIsVisible] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const currentRef = containerRef.current
+    if (!currentRef) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    observer.observe(currentRef)
+
+    return () => {
+      observer.unobserve(currentRef)
+    }
+  }, [])
+
+  const content = text || children
+  const duplicatedContent = `${content} • ${content}`
+
   return (
-    <div className={cn("overflow-hidden whitespace-nowrap", className)}>
-      <div className="inline-block animate-scroll">
-        {text || children}
+    <div 
+      ref={containerRef}
+      className={cn("overflow-hidden whitespace-nowrap", className)}
+    >
+      <div 
+        className={cn(
+          "inline-block",
+          isVisible && "animate-scroll"
+        )}
+        style={{
+          animationDuration: `${20 / default_velocity}s`,
+        }}
+      >
+        {duplicatedContent}
       </div>
     </div>
   )
