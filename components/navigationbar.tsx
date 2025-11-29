@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import ThemeToggleButton from "./themeToggle";
-import { Drawer, DrawerContent } from "@/components/ui/drawer";
+import { Drawer, DrawerContent } from "./ui/drawer";
 import logo from "../app/Assets/logo.svg";
 import { FaLinesLeaning } from "react-icons/fa6";
 import {

@@ -1,7 +1,7 @@
 "use client";
 
-import BlurFade from "@/components/magicui/blur-fade";
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import BlurFade from "../../../components/magicui/blur-fade";
+import { VelocityScroll } from "../../../components/magicui/scroll-based-velocity";
 import Image from "next/image";
 import React from "react";
 import Ordrio from "../../Assets/ordrio.jpg";

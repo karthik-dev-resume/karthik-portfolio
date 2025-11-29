@@ -1,7 +1,5 @@
 "use client";
 
-import NavigationBar from "@/components/navigationbar";
-
 import { useEffect, useState } from "react";
 import Experience from "./pages/experience/page";
 import Education from "./pages/education/page";

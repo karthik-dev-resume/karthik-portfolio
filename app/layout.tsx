@@ -3,11 +3,9 @@ import type { Metadata } from "next";
 import { Inter, Pirata_One } from "next/font/google";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
-import { cn } from "@/lib/utils";
-import NavigationBar from "@/components/navigationbar";
+import { cn } from "../lib/utils";
+import NavigationBar from "../components/navigationbar";
 import { Toaster } from "react-hot-toast";
-
-import Footer from "@/components/footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -72,7 +70,6 @@ export default function RootLayout({
         <NavigationBar />
         {children}
         <Toaster position="top-right" reverseOrder={false} />
-        <Footer />
       </body>
     </html>
   );
