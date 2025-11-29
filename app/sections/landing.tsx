@@ -1,12 +1,11 @@
 "use client";
 
-import InlineAnimatedSVG from "../../../components/animatedIcon";
-import BlurFade from "../../../components/magicui/blur-fade";
+import { motion } from "framer-motion";
+import InlineAnimatedSVG from "@/components/animatedIcon.js";
+import BlurFade from "@/components/magicui/blur-fade";
 
 import {
   Mail,
-  Instagram,
-  Facebook,
   Github,
   Linkedin,
   Phone,
@@ -35,7 +34,7 @@ export default function LandingPage() {
     { href: "tel:+7026800874", icon: Phone, label: "Phone" },
   ];
   return (
-    <BlurFade className="gap-12 flex flex-col sm:flex-row items-center justify-center px-10 sm:px-24 ">
+    <BlurFade className="gap-12 flex flex-col sm:flex-row items-center justify-center px-6 sm:px-24 ">
       <div className=" items-left flex flex-col sm:flex-col justify-center gap-10 items-center">
         <div className="opacity-100 transform-none">
           <h1 className=" font-righteous font-semibold text-wrap tracking-wide text-4xl sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
@@ -49,14 +48,21 @@ export default function LandingPage() {
         </div>
 
         <div className="flex justify-start items-start flex-row w-full flex-wrap  gap-2">
-          {socialLinks.map(({ href, icon: Icon, label }) => (
-            <a
+          {socialLinks.map(({ href, icon: Icon, label }, index) => (
+            <motion.a
               key={href}
               href={href}
-              className="text-sm inline-flex items-center gap-3 p-2 rounded-md border dark:border-zinc-200 border-gray-800"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-sm inline-flex items-center gap-3 p-2 rounded-md border dark:border-zinc-200 border-gray-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               <Icon size={16} /> {label}
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>

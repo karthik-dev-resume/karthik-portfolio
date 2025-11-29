@@ -1,22 +1,26 @@
 "use client";
 
-import BlurFade from "../../../components/magicui/blur-fade";
-import { VelocityScroll } from "../../../components/magicui/scroll-based-velocity";
+import { motion } from "framer-motion";
+import BlurFade from "@/components/magicui/blur-fade";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import Image from "next/image";
-import React from "react";
-import Ordrio from "../../Assets/ordrio.jpg";
-import Chegg from "../../Assets/chegg.jpg";
 
 export default function Experience() {
   return (
-    <>
-      <div className="w-full text-4xl sm:text-5xl font-extrabold text-left px-10 sm:px-24 font-righteous">
+    <section id="experience" className="scroll-mt-20">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full text-4xl sm:text-5xl font-extrabold text-left px-10 sm:px-24 font-righteous"
+      >
         Experience
-      </div>
+      </motion.div>
       <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-10 overflow-hidden">
         <div className="flex flex-col sm:flex-col gap-10 justify- items-center">
           <div className="text-5xl font-bold text-left flex justify-center ">
-            <Image src={Ordrio} alt="" className=" burn-effect" />
+            <Image src="/assets/ordrio.jpg" alt="Ordrio Technologies" width={200} height={200} className=" burn-effect" />
           </div>
         </div>
         <div className="flex items-start justify-center flex-col gap-3">
@@ -49,7 +53,7 @@ export default function Experience() {
       <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-10 overflow-hidden">
         <div className="flex flex-col sm:flex-col gap-10 justify- items-center">
           <div className="text-5xl font-bold text-left flex justify-center ">
-            <Image src={Chegg} alt="" className=" burn-effect" />
+            <Image src="/assets/chegg.jpg" alt="Chegg" width={200} height={200} className=" burn-effect" />
           </div>
         </div>
         <div className="flex items-start justify-center flex-col gap-3">
@@ -80,6 +84,6 @@ export default function Experience() {
           </div>
         </div>
       </BlurFade>
-    </>
+    </section>
   );
 }
