@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaDownload } from "react-icons/fa6";
 import Photo from "../../Assets/photo.png";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
-import BlurFade from "@/components/magicui/blur-fade";
+import BlurFade from "../../../components/magicui/blur-fade";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function About() {

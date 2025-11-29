@@ -1,7 +1,7 @@
 "use client";
 
-import InlineAnimatedSVG from "@/components/animatedIcon";
-import BlurFade from "@/components/magicui/blur-fade";
+import InlineAnimatedSVG from "../../../components/animatedIcon";
+import BlurFade from "../../../components/magicui/blur-fade";
 
 import {
   Mail,

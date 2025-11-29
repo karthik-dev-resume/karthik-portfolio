@@ -1,6 +1,6 @@
 "use client";
 
-import BlurFade from "@/components/magicui/blur-fade";
+import BlurFade from "../../../components/magicui/blur-fade";
 import {
   Card,
   CardContent,
@@ -8,8 +8,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "../../../components/ui/card";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../../../components/ui/tabs";
 
 export default function Education() {
   return (

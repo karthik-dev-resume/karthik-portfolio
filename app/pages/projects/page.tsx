@@ -1,6 +1,6 @@
 "use client";
 
-import BlurFade from "@/components/magicui/blur-fade";
+import BlurFade from "../../../components/magicui/blur-fade";
 import Cree8 from "../../Assets/Cree8.svg";
 import Aura from "../../Assets/Aura.svg";
 import Grocbay from "../../Assets/Grocbay.svg";
