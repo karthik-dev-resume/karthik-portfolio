@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
-import { Inter, Pirata_One } from "next/font/google";
+import { Inter, Pirata_One, Notable } from "next/font/google";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -16,6 +16,11 @@ const pirataOne = Pirata_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pirataOne",
+});
+const notable = Notable({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-notable",
 });
 
 export const metadata: Metadata = defaultMetadata;
@@ -43,7 +48,8 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
-          pirataOne.variable
+          pirataOne.variable,
+          notable.variable
         )}
       >
         <NavigationBar />
