@@ -17,10 +17,16 @@ export default function Experience() {
       >
         Experience
       </motion.div>
-      <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-10 overflow-hidden">
+      <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-16 overflow-hidden">
         <div className="flex flex-col sm:flex-col gap-10 justify- items-center">
           <div className="text-5xl font-bold text-left flex justify-center ">
-            <Image src="/assets/ordrio.jpg" alt="Ordrio Technologies" width={200} height={200} className=" burn-effect" />
+            <Image
+              src="/assets/ordrio.jpg"
+              alt="Ordrio Technologies"
+              width={200}
+              height={200}
+              className=" burn-effect"
+            />
           </div>
         </div>
         <div className="flex items-start justify-center flex-col gap-3">
@@ -50,10 +56,17 @@ export default function Experience() {
           </div>
         </div>
       </BlurFade>
-      <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-10 overflow-hidden">
+
+      <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-16 overflow-hidden">
         <div className="flex flex-col sm:flex-col gap-10 justify- items-center">
           <div className="text-5xl font-bold text-left flex justify-center ">
-            <Image src="/assets/chegg.jpg" alt="Chegg" width={200} height={200} className=" burn-effect" />
+            <Image
+              src="/assets/chegg.jpg"
+              alt="Chegg"
+              width={200}
+              height={200}
+              className=" burn-effect"
+            />
           </div>
         </div>
         <div className="flex items-start justify-center flex-col gap-3">
@@ -63,7 +76,7 @@ export default function Experience() {
             </div>
             <div className=" flex flex-row gap-6 text-xs sm:text-2xl dark:text-zinc-400 text-zinc-600 leading-relaxed">
               <p> Subject matter expert</p>
-              <p> Aug 2022 - Sept 2023</p>
+              <p> Jan 2023 - April 2023</p>
             </div>
           </div>
           <div className="flex text-sm sm:text-base justify-start items-start dark:text-zinc-400 text-zinc-600 leading-relaxed">
@@ -78,6 +91,45 @@ export default function Experience() {
             {" "}
             <VelocityScroll
               text="Object-Oriented Programming • Operating Systems • DBMS • Computer Networks • Web Development • Software Engineering • Problem-Solving Skills"
+              default_velocity={2}
+              className=" font-display text-center text-sm font-bold tracking-[-0.02em] text-zinc-600  drop-shadow-sm dark:text-zinc-400 md:text-2xl md:leading-[2.5rem]"
+            />
+          </div>
+        </div>
+      </BlurFade>
+      <BlurFade className=" w-full flex flex-col gap-10 sm:flex-row items-center justify-around px-10 sm:px-24 mt-16 overflow-hidden">
+        <div className="flex flex-col sm:flex-col gap-10 justify- items-center">
+          <div className="text-5xl font-bold text-left flex justify-center ">
+            <Image
+              src="/assets/vitvara.png"
+              alt="VITVARA Technologies"
+              width={200}
+              height={200}
+              className=" burn-effect"
+            />
+          </div>
+        </div>
+        <div className="flex items-start justify-center flex-col gap-3">
+          <div className=" flex flex-col gap-2 justify-between font-bold">
+            <div className=" text-md sm:text-2xl dark:text-zinc-400 text-zinc-600 leading-relaxed">
+              VITVARA Technologies, Mangalore
+            </div>
+            <div className=" flex flex-row gap-6 text-xs sm:text-2xl dark:text-zinc-400 text-zinc-600 leading-relaxed">
+              <p> Internship Trainee</p>
+              <p> Sep 2022 - Jan 2023</p>
+            </div>
+          </div>
+          <div className="flex text-sm sm:text-base justify-start items-start dark:text-zinc-400 text-zinc-600 leading-relaxed">
+            • Worked as a Web and App Development Intern, contributing to the
+            design and implementation of user interfaces and backend
+            integrations. <br /> • Gained hands-on experience in applying the
+            core principles of software development, version control, and
+            collaborative workflows.
+          </div>
+          <div className="w-[290px] sm:w-[1000px]">
+            {" "}
+            <VelocityScroll
+              text="Web Development • App Development • UI/UX Design • Backend Integration • Version Control • Software Development"
               default_velocity={2}
               className=" font-display text-center text-sm font-bold tracking-[-0.02em] text-zinc-600  drop-shadow-sm dark:text-zinc-400 md:text-2xl md:leading-[2.5rem]"
             />

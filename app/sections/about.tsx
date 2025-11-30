@@ -9,7 +9,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function About() {
   const resumeUrl =
-    "https://drive.google.com/file/d/1wsJ7JetWX7LDA0wN-WAHgFg7K_9GPduj/view?usp=sharing";
+    "https://drive.google.com/file/d/1ELLZnYtLMGxoSjXQF3QbpRIk8QlCpuHD/view?usp=sharing";
 
   const handleDownloadClick = () => {
     // Create a link element and trigger a download
@@ -72,11 +72,11 @@ export default function About() {
         </div>
         <div className="w-full lg:w-auto flex items-center justify-center flex-col mt-6 sm:mt-10 lg:mt-6">
           <div className="w-full max-w-xs sm:max-w-sm lg:w-96 h-auto aspect-square relative">
-            <Image 
-              src="/assets/photo.png" 
-              alt="Karthik's Photo" 
-              width={384} 
-              height={384} 
+            <Image
+              src="/assets/photo.png"
+              alt="Karthik's Photo"
+              width={384}
+              height={384}
               className="rounded-lg w-full h-full object-cover"
             />
           </div>

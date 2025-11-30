@@ -4,13 +4,7 @@ import { motion } from "framer-motion";
 import InlineAnimatedSVG from "@/components/animatedIcon.js";
 import BlurFade from "@/components/magicui/blur-fade";
 
-import {
-  Mail,
-  Github,
-  Linkedin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Mail, Github, Linkedin, Phone, Twitter } from "lucide-react";
 
 export default function LandingPage() {
   const socialLinks = [
@@ -41,9 +35,9 @@ export default function LandingPage() {
             Software Engineer, Frontend Enthusiast, Avid Learner, Optimist
           </h1>
           <p className="text-justify dark:text-zinc-400 text-zinc-600 leading-relaxed">
-            I&apos;m Karthik Shetty, an experienced frontend developer
-            passionate about learning and building open-source software that is
-            beneficial to developers and the world at large.
+            I&apos;m Karthik Shetty, a frontend developer creating interactive
+            digital experiences and high-impact web applications that make
+            everyday tasks smoother for users.
           </p>
         </div>
 
