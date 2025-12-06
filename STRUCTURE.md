@@ -100,3 +100,4 @@ KMT/
 4. Add analytics (Google Analytics, Plausible, etc.)
 5. Optimize images with Next.js Image component
 
+
