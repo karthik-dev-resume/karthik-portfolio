@@ -180,3 +180,4 @@ const InlineAnimatedSVG = () => {
 
 export default InlineAnimatedSVG;
 
+
